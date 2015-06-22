@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/thmosqueiro/modeligem/master/extras/MODELIGEMlogo.jpg" height="300px" />
+![MODELiGEM Logo](https://raw.githubusercontent.com/thmosqueiro/modeligem/master/extras/MODELIGEMlogo.jpg)
 ===========
 
 This is the main repository for team USP-Brasil @ iGEM 2015. We are
