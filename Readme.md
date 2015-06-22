@@ -1,7 +1,12 @@
 modeliGEM
 ===========
 
-This is something.
+This is the main repository for team USP-Brasil @ iGEM 2015. We are
+sharing here a suplementary material we have developed to help us with
+modeling and data analysis.
+
+For more information:
+https://www.facebook.com/brasilusp
 
 
 Accessing the notebooks
