@@ -17,4 +17,6 @@ following links:
 
 * [Python Introduction](http://nbviewer.ipython.org/github/thmosqueiro/modeligem/blob/master/notebooks/Python_Intro.ipynb) - We have prepared a brief introduction to Python language and ipython notebooks.
 
+* [Data analysis]() - We will fit some data using scipy and scikit-learn.
+
 * [Deterministic Modeling](http://nbviewer.ipython.org/github/thmosqueiro/modeligem/blob/master/notebooks/Deterministic_Modeling_Repressilator.ipynb) - Using dynamical systems, we model and numerically solve gene expression.
