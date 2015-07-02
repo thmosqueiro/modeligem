@@ -2,10 +2,13 @@
 ===========
 
 This is the main repository for team USP-Brasil @ iGEM 2015. We are
-sharing here a supplementary material we have developed to help us with
-modeling and data analysis.
+sharing here a supplementary material we have developed to help us
+with modeling and data analysis. You can find below some quick links,
+but feel free to [visit our
+wiki](https://github.com/thmosqueiro/modeligem/wiki) to find more
+material and a comprehensive guide throughout our repository!
 
-For more information:
+For more information on our Team:
 https://www.facebook.com/brasilusp
 
 
