@@ -18,8 +18,14 @@ Accessing the notebooks
 You don't need anything installed, just access our notebooks via the
 following links:
 
-* [Python Introduction](http://nbviewer.ipython.org/github/thmosqueiro/modeligem/blob/master/notebooks/Python_Intro.ipynb) - We have prepared a brief introduction to Python language and ipython notebooks.
-
-* [Data analysis](https://github.com/thmosqueiro/modeligem) - We will fit some data using scipy and scikit-learn.
-
-* [Deterministic Modeling](http://nbviewer.ipython.org/github/thmosqueiro/modeligem/blob/master/notebooks/Deterministic_Modeling_Repressilator.ipynb) - Using dynamical systems, we model and numerically solve gene expression.
+* [Python
+  Introduction](http://nbviewer.ipython.org/github/thmosqueiro/modeligem/blob/master/notebooks/Python_Intro.ipynb)
+  - We have prepared a brief introduction to Python language and
+  ipython notebooks.
+* [Data
+  analysis](http://nbviewer.ipython.org/github/thmosqueiro/modeligem/blob/master/notebooks/Data_analysis.ipynb)
+  - We will fit some data using scipy and scikit-learn.
+* [Deterministic
+  Modeling](http://nbviewer.ipython.org/github/thmosqueiro/modeligem/blob/master/notebooks/Deterministic_Modeling_Repressilator.ipynb)
+  - Using dynamical systems, we model and numerically solve gene
+  expression.
