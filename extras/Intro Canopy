@@ -2,3 +2,29 @@ Hello! In this simple tutorial, you will learn how to install Canopy (https://ww
 To start using Canopy, follow the steps below:
 1.	Access the Canopy download link (https://store.enthought.com/downloads/#default) and select your operational system. After that, click in “Download Canopy Express”.
 https://github.com/thmosqueiro/modeligem/blob/master/extras/installing_canopy/fig1.png
+The average download time for a 2 Mbps connection speed is 2-3 minutes, depending on the operational system.
+2.	Double-click the downloaded file and the installation wizard will be launched. Click on “Next” and follow the instructions provided on the screen. Don’t worry, it’s very simple! 
+https://github.com/thmosqueiro/modeligem/blob/master/extras/installing_canopy/fig2.png
+3.	Wait until all the installation processes have been performed. This may take several minutes, be patient :)
+https://github.com/thmosqueiro/modeligem/blob/master/extras/installing_canopy/fig3.png
+4.	After the process has been completed, click on “Finish”.
+https://github.com/thmosqueiro/modeligem/blob/master/extras/installing_canopy/fig4.png
+5.	Next, choose a directory for your Canopy files and click on “Continue”. 
+https://github.com/thmosqueiro/modeligem/blob/master/extras/installing_canopy/fig5.png
+6.	Wait until the software has been set up. 
+https://github.com/thmosqueiro/modeligem/blob/master/extras/installing_canopy/fig6.png
+7.	Start Using Canopy!
+https://github.com/thmosqueiro/modeligem/blob/master/extras/installing_canopy/fig7.png
+From the main Canopy screen you can access useful tools, such as:
+-Python Editor, where you can develop and test codes.
+https://github.com/thmosqueiro/modeligem/blob/master/extras/installing_canopy/fig8.png
+-Package Manager, where you can download new tools and manage existing packages.
+https://github.com/thmosqueiro/modeligem/blob/master/extras/installing_canopy/fig9.png
+-Doc Browser, where you can access Canopy and Python guides and online support.
+https://github.com/thmosqueiro/modeligem/blob/master/extras/installing_canopy/fig10.png
+-Training on Demand, a platform developed by Enthought containing video lectures, exercises and code samples for you to improve your python abilities! 
+https://github.com/thmosqueiro/modeligem/blob/master/extras/installing_canopy/fig11.png
+8.	Now you are all set to use and explore Canopy! If you need Python assistance, make sure to check our beginners tutorial in the following link (http://nbviewer.ipython.org/github/thmosqueiro/modeligem/blob/master/notebooks/Python_Intro.ipynb)
+
+
+
