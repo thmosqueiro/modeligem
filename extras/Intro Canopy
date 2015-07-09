@@ -1,1 +1,4 @@
-
+Hello! In this simple tutorial, you will learn how to install Canopy (https://www.enthought.com/products/canopy/) - a python analysis environment developed by Enthought (https://www.enthought.com/). It is a platform commonly used worldwide and highly recommended by our team. Canopy can be used to easily develop and test python codes, to analyze and visualize data, besides providing simple installation for several different tool packages. Total average installation time is 20 to 40 minutes.
+To start using Canopy, follow the steps below:
+1.	Access the Canopy download link (https://store.enthought.com/downloads/#default) and select your operational system. After that, click in “Download Canopy Express”.
+https://github.com/thmosqueiro/modeligem/blob/master/extras/installing_canopy/fig1.png
