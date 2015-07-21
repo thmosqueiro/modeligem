@@ -1,6 +1,8 @@
 import pylab as pl
 import numpy as np
 import pandas as pd
+import copy
+
 
 def filterString(string):
     return string.rstrip().split('\t')
@@ -54,6 +56,17 @@ def ReadFluor_nanomed(filename, header = 3):
 
 
 
+def normalizeByOD(Readings, OD):
+    
+    NormReadings = copy.deepcopy( Readings )
+    
+    for Reading in NormReadings:
+        Reading = np.divide(Reading, OD)
+    
+    return NormReadings
+
+
+
 def AbsorbLineReading(Times, Data, lines = np.arange(8)):
     
     ntimes = Times.shape[0]
@@ -64,6 +77,9 @@ def AbsorbLineReading(Times, Data, lines = np.arange(8)):
             m[line,time] = Data[time][line].mean()
     
     return m
+
+
+
 
 def ODplot(Data, title=""):
     for j in range(8):
