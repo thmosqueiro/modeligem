@@ -56,6 +56,74 @@ def ReadFluor_nanomed(filename, header = 3):
 
 
 
+
+def ReadFluor_timefmt_nanomed(ListOfFiles, nr_header = 2, sep = '\t'):
+    """Importing a set of data, interpreted as a time series. The time is
+    supposed to be encoded in the filename. GNANO fluorimeter has
+    several export formats. This function reads data from 'time
+    format'.
+    
+    Data is assumed to be separated by sep character (standard \t).
+    
+    list ListOfFiles :: a list with all filenames
+    int nr_header    :: number of lines of the header 
+    
+    """
+
+    # Storing the HEADER
+    f = open(ListOfFiles[0], 'r')
+    for j in range(nr_header): f.readline()
+    line = f.readline()
+    f.close()
+    HEADERS = line.split(sep)[1:-1]
+    # To ensure alphabetical order during sorting...
+    for j in range(len(HEADERS)):
+        if (HEADERS[j][:4] == 'Temp'): HEADERS[j] = 'T(oC)'
+        if ( len(HEADERS[j]) < 3 ): HEADERS[j] = HEADERS[j][0] + "0" + HEADERS[j][1]
+
+    TSeries = {}
+    for header in HEADERS:
+        TSeries[header] = []
+    
+    # Getting the data
+    for filename in ListOfFiles[1:]:
+        
+        f = open(filename, 'r')
+        for j in range(nr_header+1):
+            f.readline()
+            
+        Readings = []
+        Times = []
+            
+        while True:
+            line = f.readline()
+            if not line or line == '\r\n' : break
+
+            line_usfl = line.split(sep)[1:-1]
+
+            cnt = 0
+            for item in line_usfl:
+                if ( item == '' ): TSeries[HEADERS[cnt]].append( '' )
+                else:              TSeries[HEADERS[cnt]].append( float(item) )
+                cnt += 1
+            
+        # Closing the file
+        f.close()
+
+    
+    # Turning it into a Pandas DataFrame object
+    dictdata = {}
+    for header in HEADERS:
+        dictdata[header] = TSeries[header]
+    
+    TimeReadings = pd.DataFrame(data = dictdata)
+    
+    return TimeReadings
+
+
+
+
+
 def normalizeByOD(Readings, OD):
     
     NormReadings = copy.deepcopy( Readings )
