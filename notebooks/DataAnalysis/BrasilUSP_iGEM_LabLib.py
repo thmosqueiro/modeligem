@@ -57,7 +57,8 @@ def ReadFluor_nanomed(filename, header = 3):
 
 
 
-def ReadFluor_timefmt_nanomed(ListOfFiles, nr_header = 2, sep = '\t'):
+def ReadFluor_timefmt_nanomed(ListOfFiles, nr_header = 2, sep = '\t', 
+                              datarow = 1):
     """Importing a set of data, interpreted as a time series. The time is
     supposed to be encoded in the filename. GNANO fluorimeter has
     several export formats. This function reads data from 'time
@@ -94,18 +95,27 @@ def ReadFluor_timefmt_nanomed(ListOfFiles, nr_header = 2, sep = '\t'):
             
         Readings = []
         Times = []
-            
+        
+        row = 0
         while True:
             line = f.readline()
-            if not line or line == '\r\n' : break
-
-            line_usfl = line.split(sep)[1:-1]
-
-            cnt = 0
-            for item in line_usfl:
-                if ( item == '' ): TSeries[HEADERS[cnt]].append( '' )
-                else:              TSeries[HEADERS[cnt]].append( float(item) )
-                cnt += 1
+            
+            if not line or line == '\r\n' : 
+                if row >= datarow: break
+            else:
+                row += 1
+                
+            if row == datarow:
+                
+                line_usfl = line.split(sep)[1:-1]
+                
+                cnt = 0
+                for item in line_usfl:
+                    if ( item == '' ): 
+                        TSeries[HEADERS[cnt]].append( '' )
+                    else:
+                        TSeries[HEADERS[cnt]].append( float(item) )
+                    cnt += 1
             
         # Closing the file
         f.close()
