@@ -2,6 +2,8 @@ import pylab as pl
 import numpy as np
 import pandas as pd
 import copy
+import chardet
+import io
 
 
 def filterString(string):
@@ -70,10 +72,13 @@ def ReadFluor_timefmt_nanomed(ListOfFiles, nr_header = 2, sep = '\t',
     int nr_header    :: number of lines of the header 
     
     """
-
-    # Storing the HEADER
+    
+    
+    ## Getting the headers
     f = open(ListOfFiles[0], 'r')
+        
     for j in range(nr_header): f.readline()
+    
     line = f.readline()
     f.close()
     HEADERS = line.split(sep)[1:-1]
